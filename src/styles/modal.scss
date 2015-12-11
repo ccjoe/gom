@@ -1,0 +1,320 @@
+///Users/shaofengliu/IT
+@import 'mixins.scss';
+/* === Modals === */
+$modalBg: rgba(255,255,255,0.95);
+$modalBd: rgba(230,230,230,0.9);
+$modalButonColor : #007aff;
+$modalButonActiveBg: rgba(230,230,230,0.95);
+$modalHairlineColor: rgba(0,0,0,0.2);
+$modalDuration: 400ms;
+
+$actionsModalBg: rgba(255,255,255,0.95);
+$actionsModalButtonActiveBg: rgba(230,230,230,0.9);
+$actionsModalHairlineColor: rgba(0,0,0,0.2);
+$actionsModalDuration: 300ms;
+
+$popoverBg: rgba(255,255,255,0.95);
+$popupDuration: 400ms;
+$actionsPopoverHairline: rgba(0,0,0,0.2);
+
+.modal-overlay, .preloader-indicator-overlay, .popup-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 13000;
+    visibility: hidden;
+    opacity: 0;
+    &.modal-overlay-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.popup-overlay {
+    z-index: 10500;
+}
+.modal-layout {
+    @include absCenter(270px, auto, fixed);
+    z-index: 13500;
+    //text-align: center;
+    border-radius: 13px;
+    opacity: 0;
+    color:#000;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+
+.modal-inner {
+    padding: 15px;
+    border-radius: 13px 13px 0 0;
+    position: relative;
+    background: $modalBg;
+
+}
+.modal-title {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    html.ios-gt-8 & {
+        font-weight: 600;
+    }
+    +.modal-text {
+        margin-top: 5px;
+        position: relative;
+    }
+}
+.modal-buttons {
+    height: 44px;
+    position: relative;
+    border-top: 1px solid $modalBd;
+    &.modal-buttons-vertical {
+        display: block;
+        height: auto;
+    }
+    @include display-flex(flex);
+}
+.modal-button {
+    width: 100%;
+    padding: 0 5px;
+    height: 44px;
+    font-size: 17px;
+    line-height: 44px;
+    text-align: center;
+    color: $modalButonColor;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-box-flex:1;
+    -ms-flex:1;
+
+    background-color:$modalBg;
+    &:first-child {
+        border-radius: 0 0 0 13px;
+    }
+    &:last-child {
+        border-radius: 0 0 13px 0;
+    }
+    &:first-child:last-child {
+        border-radius: 0 0 13px 13px;
+    }
+    &.modal-button-bold {
+        font-weight: 500;
+        html.ios-gt-8 & {
+            font-weight: 600;
+        }
+    }
+    html:not(.watch-active-state) &:active, &.active-state {
+        background: $modalButonActiveBg;
+    }
+    .modal-buttons-vertical & {
+        border-radius: 0;
+        &:last-child {
+            border-radius: 0 0 13px 13px;
+        }
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: auto;
+        bottom: auto;
+        width: 1px;
+        height: 100%;
+        background-color: #b5b5b5;
+        display: block;
+        z-index: 15;
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+}
+.modal-no-buttons {
+    .modal-inner {
+        border-radius: 13px;
+    }
+    .modal-buttons {
+        display: none;
+    }
+}
+
+.modal-loading{
+    overflow: hidden;
+    @include absCenter(80px, auto, fixed);
+    .modal-inner{
+        background-color: transparent;
+        width: 80px;
+        height: 80px;
+    }
+}
+.modal-confirm{
+    .modal-buttons{
+        .modal-button{
+            @include flex(2);
+        }
+    }
+}
+.modal-alert{
+    .modal-buttons{
+        .modal-button{
+            @include flex(1);
+        }
+    }
+}
+
+.modal-top, .modal-bottom{
+    width: 100%;
+    border-radius: 0;
+    margin: 0!important;
+    left: 0!important;
+    .modal-inner, .modal-button{
+        border-radius: 0;
+    }
+    .modal-button{
+        &:first-child,&:last-child{
+            border-radius: 0;
+        }
+    }
+}
+
+.modal-top{
+    top: 0;
+    bottom: auto!important;
+    .modal-inner{
+        background-color:rgba(0, 0, 0, 0.85);
+        color: #fff;
+    }
+}
+.modal-bottom{
+    top: auto!important;
+    bottom:0;
+    max-height: 200px;
+    .modal-inner{
+        padding: 0;
+    }
+    .table-view{
+        margin-bottom: 0;
+    }
+    .modal-title{
+        height: 30px;
+        line-height: 35px;
+        font-size: 16px;
+        .btn-link{
+            font-size: 15px;
+            padding:10px;
+        }
+        .modal-btn-no{
+            float: left;
+        }
+        .modal-btn-yes{
+            float: right;
+        }
+    }
+    .modal-title + .modal-text{
+        height: 165px;
+    }
+}
+
+.modal-popover{
+    width: 150px;
+}
+
+//loading
+.spinner {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #007aff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+#modal{
+    width: 100%;
+    height: 100%;}
+
+//TOAST
+#toast{
+    display: none;
+    //@include absCenter(250px, auto, fixed);
+    position: fixed;
+    bottom:20%;
+    width: 100%;
+    text-align: center;
+    .modal-toast{
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        color: #fff;
+        .icon{
+            font-size: 15px;
+            &:before{
+                font-size: 18px;
+                position: relative;
+                top:1px;
+                margin-right: 5px;
+                //background-color: #fff;
+                //border-radius: 100%;
+            }
+        }
+    }
+    .modal-toast-info{
+        background-color: #333;
+    }
+    .modal-toast-success{
+        background-color: forestgreen;
+    }
+    .modal-toast-error{
+        background-color: orangered;
+    }
+
+}

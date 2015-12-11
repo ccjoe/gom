@@ -1,0 +1,18 @@
+body{
+    min-width: 300px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+.ui-modal, .modal-overlay, input, textarea, select, header, footer, section, button{
+    outline: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.content{
+    margin-top: 44px;
+}
+
+.table-view-cell{
+    img{
+        width: 60px;
+    }
+}
