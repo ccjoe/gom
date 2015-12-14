@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>url - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">首页 Home</a></h2><h3>类Classes</h3><ul><li><a href="Gom.html">Gom</a></li><li><a href="Gom.App.html">App</a><ul class='methods'><li data-type='method'><a href="Gom.App.html#getCRO">getCRO</a></li><li data-type='method'><a href="Gom.App.html#getLastHashByLastIndex">getLastHashByLastIndex</a></li><li data-type='method'><a href="Gom.App.html#goto">goto</a></li><li data-type='method'><a href="Gom.App.html#run">run</a></li><li data-type='method'><a href="Gom.App.html#setCRO">setCRO</a></li></ul></li><li><a href="Gom.Page.html">Page</a><ul class='methods'><li data-type='method'><a href="Gom.Page.html#destory">destory</a></li><li data-type='method'><a href="Gom.Page.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.Page.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.Page.html#offview">offview</a></li><li data-type='method'><a href="Gom.Page.html#onview">onview</a></li><li data-type='method'><a href="Gom.Page.html#push">push</a></li><li data-type='method'><a href="Gom.Page.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.Page.html#render">render</a></li><li data-type='method'><a href="Gom.Page.html#setHeader">setHeader</a></li><li data-type='method'><a href="Gom.Page.html#setSeo">setSeo</a></li><li data-type='method'><a href="Gom.Page.html#show">show</a></li><li data-type='method'><a href="Gom.Page.html#update">update</a></li></ul></li><li><a href="Gom.Service.html">Service</a><ul class='methods'><li data-type='method'><a href="Gom.Service.html#ajax">ajax</a></li><li data-type='method'><a href="Gom.Service.html#fetch">fetch</a></li><li data-type='method'><a href="Gom.Service.html#get">get</a></li><li data-type='method'><a href="Gom.Service.html#post">post</a></li><li data-type='method'><a href="Gom.Service.html#save">save</a></li><li data-type='method'><a href="Gom.Service.html#tmpl">tmpl</a></li></ul></li><li><a href="Gom.UI.html">UI</a></li><li><a href="Gom.UI.Button.html">Button</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Button.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Button.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Button.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Button.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Button.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Button.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Button.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Button.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Button.html#update">update</a></li></ul></li><li><a href="Gom.UI.Header.html">Header</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Header.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Header.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Header.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Header.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Header.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Header.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Header.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Header.html#setTitle">setTitle</a></li><li data-type='method'><a href="Gom.UI.Header.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Header.html#update">update</a></li></ul></li><li><a href="Gom.UI.List.html">List</a><ul class='methods'><li data-type='method'><a href="Gom.UI.List.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.List.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.List.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.List.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.List.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.List.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.List.html#render">render</a></li><li data-type='method'><a href="Gom.UI.List.html#show">show</a></li><li data-type='method'><a href="Gom.UI.List.html#update">update</a></li></ul></li><li><a href="Gom.UI.Modal.html">Modal</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Modal.html#.alert">alert</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.bottom">bottom</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.center">center</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.confirm">confirm</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.layout">layout</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.loading">loading</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.top">top</a></li><li data-type='method'><a href="Gom.UI.Modal.html#autoHide">autoHide</a></li><li data-type='method'><a href="Gom.UI.Modal.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getType">getType</a></li><li data-type='method'><a href="Gom.UI.Modal.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Modal.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Modal.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Modal.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Modal.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Modal.html#toggleModal">toggleModal</a></li><li data-type='method'><a href="Gom.UI.Modal.html#update">update</a></li></ul></li><li><a href="Gom.UI.Scroll.html">Scroll</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Scroll.html#getSteps">getSteps</a></li><li data-type='method'><a href="Gom.UI.Scroll.html#scrollTo">scrollTo</a></li></ul></li><li><a href="Gom.UI.Select.html">Select</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Select.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Select.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Select.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Select.html#getSelect">getSelect</a></li><li data-type='method'><a href="Gom.UI.Select.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Select.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Select.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Select.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Select.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Select.html#update">update</a></li></ul></li><li><a href="Gom.UI.Sides.html">Sides</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Sides.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getSides">getSides</a></li><li data-type='method'><a href="Gom.UI.Sides.html#hide">hide</a></li><li data-type='method'><a href="Gom.UI.Sides.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Sides.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Sides.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Sides.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Sides.html#setContent">setContent</a></li><li data-type='method'><a href="Gom.UI.Sides.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Sides.html#update">update</a></li></ul></li><li><a href="Gom.UI.Slide.html">Slide</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Slide.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Slide.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Slide.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Slide.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Slide.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Slide.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Slide.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Slide.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Slide.html#update">update</a></li></ul></li><li><a href="Gom.UI.Toggle.html">Toggle</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Toggle.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#update">update</a></li></ul></li><li><a href="Gom.View.html">View</a><ul class='methods'><li data-type='method'><a href="Gom.View.html#destory">destory</a></li><li data-type='method'><a href="Gom.View.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.View.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.View.html#offview">offview</a></li><li data-type='method'><a href="Gom.View.html#onview">onview</a></li><li data-type='method'><a href="Gom.View.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.View.html#render">render</a></li><li data-type='method'><a href="Gom.View.html#show">show</a></li><li data-type='method'><a href="Gom.View.html#update">update</a></li></ul></li></ul><h3>命名空间 Namespaces</h3><ul><li><a href="store.html">store</a><ul class='methods'><li data-type='method'><a href="store.html#.del">del</a></li><li data-type='method'><a href="store.html#.del">del</a></li><li data-type='method'><a href="store.html#.each">each</a></li><li data-type='method'><a href="store.html#.get">get</a></li><li data-type='method'><a href="store.html#.has">has</a></li><li data-type='method'><a href="store.html#.noexpire">noexpire</a></li><li data-type='method'><a href="store.html#.size">size</a></li></ul></li><li><a href="url.html">url</a><ul class='methods'><li data-type='method'><a href="url.html#.getHashPath">getHashPath</a></li><li data-type='method'><a href="url.html#.getHashSearch">getHashSearch</a></li><li data-type='method'><a href="url.html#.getHTML5Hash">getHTML5Hash</a></li><li data-type='method'><a href="url.html#.getParams">getParams</a></li><li data-type='method'><a href="url.html#.getUrl">getUrl</a></li><li data-type='method'><a href="url.html#.set">set</a></li><li data-type='method'><a href="url.html#.setParam">setParam</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">url</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        url
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>url</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line135">line 135</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getHashPath"><span class="type-signature">(static) </span>getHashPath<span class="signature">(hash, isParse)</span><span class="type-signature"> &rarr; {array}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>处理hash里 path部分数组</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>hash</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>hash部分字符串</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isParse</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>为ture时返回的是对象</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>返回hash里的path部分数组</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>&lt;p>#hash/hashpath/123/?hashsearch=test; =&amp;gt;hashpath/123 isParse为ture时返回的是对象[hashpath,123]&lt;/p></code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getHashSearch"><span class="type-signature">(static) </span>getHashSearch<span class="signature">(url, isParse)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>处理hash里 search部分键值对对象</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>string</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isParse</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>为ture时返回的是对象</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line43">line 43</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>返回hash里的search部分键值对对象</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>&lt;p>#hash/hashpath/123?hashsearch=test; =&amp;gt;hashsearch=test isParse为ture时返回的是对象{hashsearch: test}&lt;/p></code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getHTML5Hash"><span class="type-signature">(static) </span>getHTML5Hash<span class="signature">(url)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>处理键值对字符串为对象,获取url里所有键值对返回</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>html5 history url 类似 tets.com?hash/path/to</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>返回like=&gt;  hash/path/to</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getParams"><span class="type-signature">(static) </span>getParams<span class="signature">(kvp)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>处理键值对字符串为对象,获取url里所有键值对返回</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>kvp</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>key-value-pairs-string</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line24">line 24</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>返回键值对对象</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>&lt;p>hashsearch=test; =&amp;gt; {hashsearch: test}&lt;/p></code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getUrl"><span class="type-signature">(static) </span>getUrl<span class="signature">(url, isParse)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>处理url 相关部件解析与 生成</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>传入url</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isParse</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>parse为true时返回的各部件为序列化对象，否则为string,同上面的isParse</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line71">line 71</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>返回url各部件</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>&lt;p>http://domain.com/pathto/urlpath/123?search=1&amp;amp;param=11/#hash/hashpath/123?hashsearch=test;
+return value like {
+                protocal: {string},   协议
+                domain: {string},     域名
+                path: {string},       路径
+                search: {object},     参数
+                hash: {string},       Hash，#后所有
+                hashsearch: {object}  Hash里参数
+                hashPath: {array}     Hash里数组
+            };&lt;/p></code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".set"><span class="type-signature">(static) </span>set<span class="signature">(url, kvpOrk, value)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>将object 为url设置新增serach</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>被操作的url</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>kvpOrk</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>object or string key</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>value</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line121">line 121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>设置search的url</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setParam"><span class="type-signature">(static) </span>setParam<span class="signature">(obj, equalStr, joinStr)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>将object 处理为url 相关部件search</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>obj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>将object对象转化为url参数字符串</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>equalStr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>key与value间的相等字符, 默认为 '='</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>joinStr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>key-value key-value间的连接符 默认为 '&amp;'</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_url.js.html">utils/url.js</a>, <a href="utils_url.js.html#line104">line 104</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>search</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Mon Dec 14 2015 18:51:05 GMT+0800 (中国标准时间) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

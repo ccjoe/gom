@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>App - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">首页 Home</a></h2><h3>类Classes</h3><ul><li><a href="Gom.html">Gom</a></li><li><a href="Gom.App.html">App</a><ul class='methods'><li data-type='method'><a href="Gom.App.html#getCRO">getCRO</a></li><li data-type='method'><a href="Gom.App.html#getLastHashByLastIndex">getLastHashByLastIndex</a></li><li data-type='method'><a href="Gom.App.html#goto">goto</a></li><li data-type='method'><a href="Gom.App.html#run">run</a></li><li data-type='method'><a href="Gom.App.html#setCRO">setCRO</a></li></ul></li><li><a href="Gom.Page.html">Page</a><ul class='methods'><li data-type='method'><a href="Gom.Page.html#destory">destory</a></li><li data-type='method'><a href="Gom.Page.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.Page.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.Page.html#offview">offview</a></li><li data-type='method'><a href="Gom.Page.html#onview">onview</a></li><li data-type='method'><a href="Gom.Page.html#push">push</a></li><li data-type='method'><a href="Gom.Page.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.Page.html#render">render</a></li><li data-type='method'><a href="Gom.Page.html#setHeader">setHeader</a></li><li data-type='method'><a href="Gom.Page.html#setSeo">setSeo</a></li><li data-type='method'><a href="Gom.Page.html#show">show</a></li><li data-type='method'><a href="Gom.Page.html#update">update</a></li></ul></li><li><a href="Gom.Service.html">Service</a><ul class='methods'><li data-type='method'><a href="Gom.Service.html#ajax">ajax</a></li><li data-type='method'><a href="Gom.Service.html#fetch">fetch</a></li><li data-type='method'><a href="Gom.Service.html#get">get</a></li><li data-type='method'><a href="Gom.Service.html#post">post</a></li><li data-type='method'><a href="Gom.Service.html#save">save</a></li><li data-type='method'><a href="Gom.Service.html#tmpl">tmpl</a></li></ul></li><li><a href="Gom.UI.html">UI</a></li><li><a href="Gom.UI.Button.html">Button</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Button.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Button.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Button.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Button.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Button.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Button.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Button.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Button.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Button.html#update">update</a></li></ul></li><li><a href="Gom.UI.Header.html">Header</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Header.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Header.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Header.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Header.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Header.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Header.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Header.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Header.html#setTitle">setTitle</a></li><li data-type='method'><a href="Gom.UI.Header.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Header.html#update">update</a></li></ul></li><li><a href="Gom.UI.List.html">List</a><ul class='methods'><li data-type='method'><a href="Gom.UI.List.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.List.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.List.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.List.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.List.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.List.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.List.html#render">render</a></li><li data-type='method'><a href="Gom.UI.List.html#show">show</a></li><li data-type='method'><a href="Gom.UI.List.html#update">update</a></li></ul></li><li><a href="Gom.UI.Modal.html">Modal</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Modal.html#.alert">alert</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.bottom">bottom</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.center">center</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.confirm">confirm</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.layout">layout</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.loading">loading</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.top">top</a></li><li data-type='method'><a href="Gom.UI.Modal.html#autoHide">autoHide</a></li><li data-type='method'><a href="Gom.UI.Modal.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getType">getType</a></li><li data-type='method'><a href="Gom.UI.Modal.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Modal.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Modal.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Modal.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Modal.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Modal.html#toggleModal">toggleModal</a></li><li data-type='method'><a href="Gom.UI.Modal.html#update">update</a></li></ul></li><li><a href="Gom.UI.Scroll.html">Scroll</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Scroll.html#getSteps">getSteps</a></li><li data-type='method'><a href="Gom.UI.Scroll.html#scrollTo">scrollTo</a></li></ul></li><li><a href="Gom.UI.Select.html">Select</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Select.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Select.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Select.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Select.html#getSelect">getSelect</a></li><li data-type='method'><a href="Gom.UI.Select.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Select.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Select.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Select.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Select.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Select.html#update">update</a></li></ul></li><li><a href="Gom.UI.Sides.html">Sides</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Sides.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getSides">getSides</a></li><li data-type='method'><a href="Gom.UI.Sides.html#hide">hide</a></li><li data-type='method'><a href="Gom.UI.Sides.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Sides.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Sides.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Sides.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Sides.html#setContent">setContent</a></li><li data-type='method'><a href="Gom.UI.Sides.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Sides.html#update">update</a></li></ul></li><li><a href="Gom.UI.Slide.html">Slide</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Slide.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Slide.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Slide.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Slide.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Slide.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Slide.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Slide.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Slide.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Slide.html#update">update</a></li></ul></li><li><a href="Gom.UI.Toggle.html">Toggle</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Toggle.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#update">update</a></li></ul></li><li><a href="Gom.View.html">View</a><ul class='methods'><li data-type='method'><a href="Gom.View.html#destory">destory</a></li><li data-type='method'><a href="Gom.View.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.View.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.View.html#offview">offview</a></li><li data-type='method'><a href="Gom.View.html#onview">onview</a></li><li data-type='method'><a href="Gom.View.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.View.html#render">render</a></li><li data-type='method'><a href="Gom.View.html#show">show</a></li><li data-type='method'><a href="Gom.View.html#update">update</a></li></ul></li></ul><h3>命名空间 Namespaces</h3><ul><li><a href="store.html">store</a><ul class='methods'><li data-type='method'><a href="store.html#.del">del</a></li><li data-type='method'><a href="store.html#.del">del</a></li><li data-type='method'><a href="store.html#.each">each</a></li><li data-type='method'><a href="store.html#.get">get</a></li><li data-type='method'><a href="store.html#.has">has</a></li><li data-type='method'><a href="store.html#.noexpire">noexpire</a></li><li data-type='method'><a href="store.html#.size">size</a></li></ul></li><li><a href="url.html">url</a><ul class='methods'><li data-type='method'><a href="url.html#.getHashPath">getHashPath</a></li><li data-type='method'><a href="url.html#.getHashSearch">getHashSearch</a></li><li data-type='method'><a href="url.html#.getHTML5Hash">getHTML5Hash</a></li><li data-type='method'><a href="url.html#.getParams">getParams</a></li><li data-type='method'><a href="url.html#.getUrl">getUrl</a></li><li data-type='method'><a href="url.html#.set">set</a></li><li data-type='method'><a href="url.html#.setParam">setParam</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">App</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Gom.html">Gom</a>.</span>
+        
+        App
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="App"><span class="type-signature"></span>new App<span class="signature">(config, route)</span><span class="type-signature"> &rarr; {app}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>App对象</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>App配置选项config,</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>route</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">route</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>App配置选项router,</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app.js.html">app.js</a>, <a href="app.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">app</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>&lt;p>传入配置文件与路由文件
+new App(config, route).run();&lt;/p></code></pre>
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="getCRO"><span class="type-signature"></span>getCRO<span class="signature">(hashPath)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>根据完整hash获取页面对象(即具体路由指向的路由表对象)
+路由查找规则，根据hash路径数据长度查找CRO对应对象，在每个长度的index找不到则查找'/:var'， 在最后index有‘/’则查找'/';</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>hashPath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>hashPath是形如?module/list  ?module/123的值</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app.js.html">app.js</a>, <a href="app.js.html#line95">line 95</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>CRO (Current Router Object)返回具体路由指向的路由表对象</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getLastHashByLastIndex"><span class="type-signature"></span>getLastHashByLastIndex<span class="signature">(index)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>从后往前依据 倒数index取历史hash</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>从0开始取值</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app.js.html">app.js</a>, <a href="app.js.html#line231">line 231</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>route的历史记录</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="goto"><span class="type-signature"></span>goto<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>根据完整hash路由或CRO对象到页面，封装了_routeByHash 与 _routeByCRO实现</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app.js.html">app.js</a>, <a href="app.js.html#line145">line 145</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="tag-todo">To Do:</dt>
+    <dd class="tag-todo">
+        <ul>
+            <li>页面间数据传递</li>
+        </ul>
+    </dd>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>&lt;p>module/list  module/123&lt;/p>
+&lt;ul>
+&lt;li>? 站内链接跳转&lt;h1>站内组件或hash跳转(仅页面内)&lt;/h1>http(s)://或// 站间跳转 判断是否本域,本域的话跳转到search部分&lt;/li>
+&lt;/ul></code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="run"><span class="type-signature"></span>run<span class="signature">(callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>启动GomApp</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>在初始Gom.App时的需要完全的工作可以定义在callback</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app.js.html">app.js</a>, <a href="app.js.html#line26">line 26</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setCRO"><span class="type-signature"></span>setCRO<span class="signature">(hashPath)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>设置cro, 用于页面向某个页面传递数据</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>hashPath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>hashPath是形如?module/list  ?module/123的值</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="app.js.html">app.js</a>, <a href="app.js.html#line137">line 137</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Mon Dec 14 2015 18:51:05 GMT+0800 (中国标准时间) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

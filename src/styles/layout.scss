@@ -7,6 +7,7 @@ body{
     outline: none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+
 .content{
     margin-top: 44px;
 }
@@ -15,4 +16,8 @@ body{
     img{
         width: 60px;
     }
+}
+
+[data-ui-widget]{
+    visibility: hidden;
 }

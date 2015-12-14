@@ -36,53 +36,67 @@
     };
 })();
 
-var gomPath = $('#gom')[0].src.match(/(.+)gom\.js/)[1];
-console.log(gomPath, 'gomPath');
+var $MAIN_SCRIPT = $('script[data-gom-path]');
+var GOM_PATH = $MAIN_SCRIPT.attr('data-gom-path') || $MAIN_SCRIPT[0].src.match(/(.+)gom\.js/)[1];
+console.log(GOM_PATH, 'gomPath');
 require.config({
     paths:{
-        Gom:    gomPath + 'gom',
-        App:    gomPath + 'app',
-        UI :    gomPath + 'ui/ui',
-        Button: gomPath + 'ui/ui.button',
-        Header: gomPath + 'ui/ui.header',
-        List:   gomPath + 'ui/ui.list',
-        Modal:  gomPath + 'ui/ui.modal',
-        Sides:  gomPath + 'ui/ui.sides',
-        Scroll: gomPath + 'ui/ui.scroll',
-        Slide:  gomPath + 'ui/ui.slide',
-        Select: gomPath + 'ui/ui.select',
-        View:   gomPath + 'core/view',
-        Page:   gomPath + 'core/page',
-        Service:gomPath + 'core/service',
-        Store:  gomPath + 'utils/store',
-        Url:    gomPath + 'utils/url',
-        Fx:     gomPath + 'utils/fx',
-        Swipe:  gomPath + 'utils/swipe',
-        UITmpl: gomPath + 'ui/ui.tmpl'
+        Gom:    GOM_PATH + 'gom',
+        App:    GOM_PATH + 'app',
+        UI :    GOM_PATH + 'ui/ui',
+        Toggle :GOM_PATH + 'ui/ui.Toggle',
+        Button: GOM_PATH + 'ui/ui.button',
+        Header: GOM_PATH + 'ui/ui.header',
+        List:   GOM_PATH + 'ui/ui.list',
+        Modal:  GOM_PATH + 'ui/ui.modal',
+        Sides:  GOM_PATH + 'ui/ui.sides',
+        Scroll: GOM_PATH + 'ui/ui.scroll',
+        Slide:  GOM_PATH + 'ui/ui.slide',
+        Select: GOM_PATH + 'ui/ui.select',
+        View:   GOM_PATH + 'core/view',
+        Page:   GOM_PATH + 'core/page',
+        Service:GOM_PATH + 'core/service',
+        Store:  GOM_PATH + 'utils/store',
+        Url:    GOM_PATH + 'utils/url',
+        Fx:     GOM_PATH + 'utils/fx',
+        Swipe:  GOM_PATH + 'utils/swipe',
+        UITmpl: GOM_PATH + 'ui/ui.tmpl'
     }
 });
 define('Gom', ['Service', 'Page', 'View', 'UI', 'App'], function(Service, Page, View, UI, App){
-    /**
-     * Gom对象
-     * @constructs Gom
-     * @param {object} config
-     * @return {Object} Gom
-     * @example
-     * new Gom(config, route); 传入配置文件与路由文件
-     */
-    //var expires = 1000*60*5; //5min 过期时间，后面将从config.js配置里获取;
-    var Gom ={
+    var GomStatic ={
         version: '1.0.0',
         isWebApp: /http(s)?:\/\//.test(location.protocol),
     };
-
-    var Module = {
+    /**
+     * Gom对象
+     * @class Gom
+     * @desc
+     * A. 引入框架文件如下：（其中data-gom-path用来指定gom文件的路径，值为空时会自动判断,有值时为需要指定绝对完整的绝对路径值）
+     * <script src="gom/src/gom.js" data-gom-path></script>
+     * B. Gom下有如下模块：App，Service, View, Page, UI, 其中UI模块包含一些UI组件的模块。
+     * ```
+     * GOM
+     *    ---App
+     *    ---Service
+     *    ---View
+     *    ---Page
+     *    ---UI
+     *          ---Button
+     *          ---Header
+     *          ---List
+     *          ---……等等
+     * ```
+     * 引入模块的二种方式：
+     * 1.通过注入Gom模块,然后通过对象层级引用如Gom.ModuleName 或 Gom.UI.ComponentsName
+     * 2.直接引入ComponentName(如Button)
+     */
+    var Gom = {
         Service:Service,
         Page:   Page,
         View:   View,
         UI:     UI,
         App:    App
     };
-    console.log(Module, 'Module');
-    return Module;
+    return Gom;
 });

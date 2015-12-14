@@ -1,4 +1,17 @@
 $selectItemHeight: 33px;
+.gom-ui-select{
+    position: relative;
+}
+
+.input-row {
+    .gom-ui-select{
+        height: 33px;
+    }
+    .ss-cell-yard{
+        border: 0;
+    }
+}
+
 .ui-scroll-select{
     display: flex;
     height: 100%;
@@ -28,7 +41,7 @@ $selectItemHeight: 33px;
         height: $selectItemHeight;
         line-height: $selectItemHeight;
         text-align: center;
-        background-image: none;
+        background-image: none!important;
         a{
             margin: 0;
         }

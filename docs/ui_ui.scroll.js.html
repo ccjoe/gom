@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ui/ui.scroll.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">首页 Home</a></h2><h3>类Classes</h3><ul><li><a href="Gom.html">Gom</a></li><li><a href="Gom.App.html">App</a><ul class='methods'><li data-type='method'><a href="Gom.App.html#getCRO">getCRO</a></li><li data-type='method'><a href="Gom.App.html#getLastHashByLastIndex">getLastHashByLastIndex</a></li><li data-type='method'><a href="Gom.App.html#goto">goto</a></li><li data-type='method'><a href="Gom.App.html#run">run</a></li><li data-type='method'><a href="Gom.App.html#setCRO">setCRO</a></li></ul></li><li><a href="Gom.Page.html">Page</a><ul class='methods'><li data-type='method'><a href="Gom.Page.html#destory">destory</a></li><li data-type='method'><a href="Gom.Page.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.Page.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.Page.html#offview">offview</a></li><li data-type='method'><a href="Gom.Page.html#onview">onview</a></li><li data-type='method'><a href="Gom.Page.html#push">push</a></li><li data-type='method'><a href="Gom.Page.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.Page.html#render">render</a></li><li data-type='method'><a href="Gom.Page.html#setHeader">setHeader</a></li><li data-type='method'><a href="Gom.Page.html#setSeo">setSeo</a></li><li data-type='method'><a href="Gom.Page.html#show">show</a></li><li data-type='method'><a href="Gom.Page.html#update">update</a></li></ul></li><li><a href="Gom.Service.html">Service</a><ul class='methods'><li data-type='method'><a href="Gom.Service.html#ajax">ajax</a></li><li data-type='method'><a href="Gom.Service.html#fetch">fetch</a></li><li data-type='method'><a href="Gom.Service.html#get">get</a></li><li data-type='method'><a href="Gom.Service.html#post">post</a></li><li data-type='method'><a href="Gom.Service.html#save">save</a></li><li data-type='method'><a href="Gom.Service.html#tmpl">tmpl</a></li></ul></li><li><a href="Gom.UI.html">UI</a></li><li><a href="Gom.UI.Button.html">Button</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Button.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Button.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Button.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Button.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Button.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Button.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Button.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Button.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Button.html#update">update</a></li></ul></li><li><a href="Gom.UI.Header.html">Header</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Header.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Header.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Header.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Header.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Header.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Header.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Header.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Header.html#setTitle">setTitle</a></li><li data-type='method'><a href="Gom.UI.Header.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Header.html#update">update</a></li></ul></li><li><a href="Gom.UI.List.html">List</a><ul class='methods'><li data-type='method'><a href="Gom.UI.List.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.List.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.List.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.List.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.List.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.List.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.List.html#render">render</a></li><li data-type='method'><a href="Gom.UI.List.html#show">show</a></li><li data-type='method'><a href="Gom.UI.List.html#update">update</a></li></ul></li><li><a href="Gom.UI.Modal.html">Modal</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Modal.html#.alert">alert</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.bottom">bottom</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.center">center</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.confirm">confirm</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.layout">layout</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.loading">loading</a></li><li data-type='method'><a href="Gom.UI.Modal.html#.top">top</a></li><li data-type='method'><a href="Gom.UI.Modal.html#autoHide">autoHide</a></li><li data-type='method'><a href="Gom.UI.Modal.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Modal.html#getType">getType</a></li><li data-type='method'><a href="Gom.UI.Modal.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Modal.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Modal.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Modal.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Modal.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Modal.html#toggleModal">toggleModal</a></li><li data-type='method'><a href="Gom.UI.Modal.html#update">update</a></li></ul></li><li><a href="Gom.UI.Scroll.html">Scroll</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Scroll.html#getSteps">getSteps</a></li><li data-type='method'><a href="Gom.UI.Scroll.html#scrollTo">scrollTo</a></li></ul></li><li><a href="Gom.UI.Select.html">Select</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Select.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Select.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Select.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Select.html#getSelect">getSelect</a></li><li data-type='method'><a href="Gom.UI.Select.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Select.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Select.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Select.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Select.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Select.html#update">update</a></li></ul></li><li><a href="Gom.UI.Sides.html">Sides</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Sides.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Sides.html#getSides">getSides</a></li><li data-type='method'><a href="Gom.UI.Sides.html#hide">hide</a></li><li data-type='method'><a href="Gom.UI.Sides.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Sides.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Sides.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Sides.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Sides.html#setContent">setContent</a></li><li data-type='method'><a href="Gom.UI.Sides.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Sides.html#update">update</a></li></ul></li><li><a href="Gom.UI.Slide.html">Slide</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Slide.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Slide.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Slide.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Slide.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Slide.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Slide.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Slide.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Slide.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Slide.html#update">update</a></li></ul></li><li><a href="Gom.UI.Toggle.html">Toggle</a><ul class='methods'><li data-type='method'><a href="Gom.UI.Toggle.html#destory">destory</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#offview">offview</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#onview">onview</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#render">render</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#show">show</a></li><li data-type='method'><a href="Gom.UI.Toggle.html#update">update</a></li></ul></li><li><a href="Gom.View.html">View</a><ul class='methods'><li data-type='method'><a href="Gom.View.html#destory">destory</a></li><li data-type='method'><a href="Gom.View.html#getHTMLFragment">getHTMLFragment</a></li><li data-type='method'><a href="Gom.View.html#getHTMLTmpl">getHTMLTmpl</a></li><li data-type='method'><a href="Gom.View.html#offview">offview</a></li><li data-type='method'><a href="Gom.View.html#onview">onview</a></li><li data-type='method'><a href="Gom.View.html#refreshEvent">refreshEvent</a></li><li data-type='method'><a href="Gom.View.html#render">render</a></li><li data-type='method'><a href="Gom.View.html#show">show</a></li><li data-type='method'><a href="Gom.View.html#update">update</a></li></ul></li></ul><h3>命名空间 Namespaces</h3><ul><li><a href="store.html">store</a><ul class='methods'><li data-type='method'><a href="store.html#.del">del</a></li><li data-type='method'><a href="store.html#.del">del</a></li><li data-type='method'><a href="store.html#.each">each</a></li><li data-type='method'><a href="store.html#.get">get</a></li><li data-type='method'><a href="store.html#.has">has</a></li><li data-type='method'><a href="store.html#.noexpire">noexpire</a></li><li data-type='method'><a href="store.html#.size">size</a></li></ul></li><li><a href="url.html">url</a><ul class='methods'><li data-type='method'><a href="url.html#.getHashPath">getHashPath</a></li><li data-type='method'><a href="url.html#.getHashSearch">getHashSearch</a></li><li data-type='method'><a href="url.html#.getHTML5Hash">getHTML5Hash</a></li><li data-type='method'><a href="url.html#.getParams">getParams</a></li><li data-type='method'><a href="url.html#.getUrl">getUrl</a></li><li data-type='method'><a href="url.html#.set">set</a></li><li data-type='method'><a href="url.html#.setParam">setParam</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ui/ui.scroll.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//引入插件时没有参数，因为插件在框架里全局运行， 这就要求框架引入依赖的zepto需在框架之前
+define(['Swipe', 'Fx'], function() {
+    //水平或垂直滚动的面板，just it;
+    var vendor = (/webkit/i).test(navigator.appVersion) ? 'webkit' :
+        (/firefox/i).test(navigator.userAgent) ? 'Moz' :
+            'opera' in window ? 'O' : '';
+    var has3d = 'WebKitCSSMatrix' in window &amp;&amp; 'm11' in new WebKitCSSMatrix();
+    /**
+     * @class Gom.UI.Scroll
+     * @alias Scroll
+     * @param {object} opts 参列
+     * opts.wrapper     require 滚动对象所在的容器
+     * opts.className   require className 滚动对象的className
+     * opts.step        options 步长 默认0 不计步长，滚动的结果一定是以此为单位, 滚屏网站时可以一屏一步长,
+     *                  非滚动选择组件(time, district..)一般不用此属性,否则滚动以步长计不会具体到点
+     * opts.outer       options 允许出界的范围
+     * opts.outerFront  options 允许出界位置上面显示的html或文字
+     * opts.speed 1     0与1之间  速度控制，默认1，在time选择器时设置小更容易选择，在页面滚动设置为1较好。
+     * opts.outerEnd    允许出界位置下面显示的html或文字
+     * opts.direction   options vertical/horizontal 默认为垂直 水平与垂直
+     * opts.onScroll    options 每次滚动时回调 回调里的this指向本实例
+     * opts.endScroll   options 每次滚动停回调 回调里的this指向本实例
+     * opts.onTop       options 滚动到上时 回调里的this指向本实例
+     * opts.onBottom    options 滚动到下时 回调里的this指向本实例
+     //* opts.scrollBar options 是否显示滚动条
+     * @example 实例
+     * new Scroll({
+             wrapper    : '.scroll-example2',    //滚动对象所在的容器
+             className  : '.scroll-content',      //滚动对象的className
+             direction  : 'vertical', //'vertical',             //水平与垂直
+             step       : 0, // 不设置步长
+             outer:       允许出界的范围
+             outerFront : '允许出界位置上面显示的html或文字',
+             outerEnd   : '允许出界位置下面显示的html或文字',
+             onScroll: function(point){ },    //每次滚动时回调
+             endScroll: function(point){ console.log('单次滚动结束'); }, //   每次滚动停回调
+             onTop: function(){ console.log('滚动到最上面，滚动停止时触发')},       //滚动到上时
+             onBottom:  function(){ console.log('滚动到最下面，滚动停止时触发')}   // 滚动到下时
+        });
+     */
+    var Scroll = Class.extend({
+        init: function (opts) {
+            opts.direction = opts.direction || 'vertical';
+            var defalutsThis = {
+                $wrapper : $(opts.wrapper),
+                $scroll : $(opts.className),
+                step    : opts.step || 0,
+                speed   : opts.speed || 1,
+                outer   : opts.outer ||150,
+                outerFront: opts.outerFront,
+                outerEnd:  opts.outerEnd,
+                isX     : opts.direction !== 'vertical',
+                onScroll  : opts.onScroll || function(){},
+                endScroll : opts.endScroll || function(){},
+                onTop : opts.onTop || function(){},
+                onBottom : opts.onBottom || function(){}
+            };
+
+            $.extend(this, defalutsThis);
+            this.construct();
+        },
+        construct: function(){
+          this.bindScroll();
+        },
+        bindScroll: function(){
+            var that = this, $wrapper = this.$wrapper, direct = this.isX?'horizontal':'vertical';
+            console.log(direct, 'direct');
+            if(this.outerFront){
+                $wrapper.prepend('&lt;div class="ui-scroll-front">'+this.outerFront+'&lt;/div>');
+            }
+            if(this.outerEnd){
+             $wrapper.append('&lt;div class="ui-scroll-end">'+this.outerEnd+'&lt;/div>');
+            }
+            $wrapper.addClass('ui-scroll ui-scroll-'+direct).swipe({
+                //swipeY: 30,
+                moveCallback: function(point){
+                    that._setScrollTrans(point, true);
+                },
+                endCallback: function(point){
+                    that._setScrollTrans(point);
+                }
+            })
+        },
+        //滑动区域尺寸，纵向滚动获取总高度，横向滚动获取总宽
+        getScrollSize: function(){
+            return !this.isX ? this.$scroll.height() : this.$scroll.width();
+        },
+        //容器高度
+        getWrapperSize: function() {
+            return !this.isX ? this.$wrapper.height() : this.$wrapper.width();
+        },
+        //滚动到 num, elem, top, bottom
+        /**
+         * 滚动到...
+         * @method Gom.UI.Scroll#scrollTo
+         * @param {object} where 可以为具体的数字，元素, top, bottom字符串
+         */
+        scrollTo: function(where){
+            var toType = typeof  where, val;
+            if(where === 'top'){
+                val = 0;
+            }else if(where === 'bottom'){
+                val = this.getWrapperSize() - this.getScrollSize();
+            }
+            if(toType === 'number'){
+                val = where;
+            }
+            console.log(val, 'scrollTo val');
+            this._scrollFxTo(val);
+            console.log(this.getSteps(), '滚动的步长为：');
+        },
+        /**
+         * 设置了step时获取滚动了多少步长
+         * @method Gom.UI.Scroll#getSteps
+         * @return  {number} 步长数
+         */
+        getSteps: function(){
+            return   this.$scroll.data('swipe-steps');
+        },
+        _scrollFxTo: function(val){
+            //有步长值的话以步长计
+            if(this.step){
+                var vals = this._getTransStep(val);
+                console.log(vals, '步长信息');
+                val = vals.val;
+                this.$scroll.data('swipe-steps', vals.stepNum);
+            }
+
+            this.$scroll.data('swipe-offset', val);
+            this.$scroll.fx(this._scrollCount(val));  //, 'normal', 'easeOutQuint'
+        },
+        //滚动时回调（moving为true为事件中回调，false为事件结束时回调）
+        _setScrollTrans: function(point, moveing){
+            var distance = this.isX ? point.swipeX : point.swipeY;
+            var transVal = this._getTransVal(distance, point.swipeTime, moveing);
+            var transStr = this._scrollCount(transVal);
+            if(moveing){
+                this.$scroll.css(transStr);
+                this.onScroll(point);
+            }else{
+                this._scrollFxTo(transVal);
+                this.endScroll(point);
+            }
+        },
+        //计算当前滚动到的并限制边界范围
+        _getTransVal: function(distance, swipeTime, moveing){
+            distance = moveing ? distance : distance * this._getRatio(swipeTime);
+            var swipeOffset = this.$scroll.data('swipe-offset') || 0;
+            if(swipeOffset){
+                distance += swipeOffset;
+            }
+            //限制区域
+            var maxTransDis = this.getScrollSize() - this.getWrapperSize();
+            var maxOuter    = moveing ? this.outer : 0,
+                minRange = 0 + maxOuter,
+                maxRange = maxTransDis + maxOuter;
+            console.log(this.getScrollSize(), this.getWrapperSize(), distance, minRange, maxTransDis, maxRange, '滑动内容大小, 容器大小, 滑动距离, 最小范围, 最大位移， 最大范围');
+            var absDis = Math.abs(distance), pxDis = distance + 'px';
+            //在顶端越界拉时
+            if(0 &lt; distance &amp;&amp;  distance &lt;= minRange){
+                $('.ui-scroll-front').show().css({height: pxDis,'line-height': pxDis});
+            }
+            //在底端越界拉时
+            if(maxTransDis &lt; absDis &amp;&amp;  absDis &lt;= maxRange){
+                pxDis = (absDis-maxTransDis)+'px';
+                $('.ui-scroll-end').show().css({height: pxDis, 'line-height': pxDis});
+            }
+
+            if(distance > minRange){
+                distance = minRange;
+                if(!moveing){
+                    this.onTop();
+                    $('.ui-scroll-front').hide();
+                };
+            }
+
+            if(distance &lt; -maxRange){
+                distance = -maxRange;
+                if(!moveing){
+                    this.onBottom();
+                    $('.ui-scroll-end').hide();
+                };
+            }
+
+            return distance;
+        },
+
+        //计算当前滚动到的并限制步长结果的值,返回步长数与与滚动步长的值
+        _getTransStep: function(val){
+            console.log(val, 'val');
+            var step = this.step, stepNum = Math.round(val/step);
+            return {
+                stepNum: Math.abs(stepNum),
+                val: step*stepNum
+            };
+        },
+
+        //根据swipe时间计算滚动速度
+        _getRatio: function(swipeTime){
+            var ratio, speedval = this.speed*1000;
+            if(swipeTime > speedval){
+                ratio = 1;
+            }else{
+                ratio = speedval/swipeTime;
+                ratio = ratio > 30 ? 30 : ratio;
+            }
+            console.log(swipeTime, ratio, 'swipeRatio');
+            return ratio;
+        },
+
+        //根据值计算滚动translate对象
+        _scrollCount: function(val){
+            var isX =  this.isX;       //水平垂直
+            var x = isX ? (val+'px') : '0',
+                y = isX ? '0' : (val+'px');
+            var props = {};
+            props['-'+ vendor + '-transform'] = has3d ?
+            "translate3d("+x+","+y+",0)" :
+            "translate("+x+","+y+")";
+            return props;
+        }
+
+    });
+    return Scroll;
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.3</a> on Mon Dec 14 2015 18:51:05 GMT+0800 (中国标准时间) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
