@@ -478,27 +478,23 @@ textarea,
 // Popovers
 // --------------------------------------------------
 
-.popover {
+.modal-popover {
   border-radius: 12px;
   @include transition(-webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out);
-
-  &:before {
-    border-bottom: 15px solid $chrome-color;
-  }
 }
 
 // Popovers with `bar`
-.popover .bar {
+.modal-popover .bar {
   @include box-shadow(none);
 }
 
 // Popovers with `bar-nav`
-.popover .bar-nav {
+.modal-popover .bar-nav {
   border-bottom: 1px solid rgba(0,0,0,.15);
 }
 
 // Popovers with `table-views`
-.popover .table-view {
+.modal-popover .table-view {
   background-image: none;
   border-radius: 12px;
 }

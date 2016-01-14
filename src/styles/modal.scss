@@ -16,7 +16,8 @@ $actionsModalDuration: 300ms;
 $popoverBg: rgba(255,255,255,0.95);
 $popupDuration: 400ms;
 $actionsPopoverHairline: rgba(0,0,0,0.2);
-
+$chrome-color:   rgba(247,247,247,.98) !global;
+$triSize: 20px;
 .modal-overlay, .preloader-indicator-overlay, .popup-overlay {
     position: absolute;
     left: 0;
@@ -27,6 +28,8 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
     z-index: 13000;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
     &.modal-overlay-visible {
         visibility: visible;
         opacity: 1;
@@ -35,18 +38,26 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
 .popup-overlay {
     z-index: 10500;
 }
-.modal-layout {
-    @include absCenter(270px, auto, fixed);
+.modal-layout, .modal-toast, .modal-loading{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
     z-index: 13500;
-    //text-align: center;
+}
+.modal-layout, .modal-loading{
+    position: absolute;
+    width: 270px;
+    margin-left: -135px;
     border-radius: 13px;
     opacity: 0;
     color:#000;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
+}
+.modal-alert, .modal-confirm, .modal-loading, .modal-center{
+    left: 50%;
+    top:50%;
 }
 
 .modal-inner {
@@ -54,8 +65,8 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
     border-radius: 13px 13px 0 0;
     position: relative;
     background: $modalBg;
-
 }
+
 .modal-title {
     font-weight: 500;
     font-size: 18px;
@@ -148,7 +159,8 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
 
 .modal-loading{
     overflow: hidden;
-    @include absCenter(80px, auto, fixed);
+    width:80px;
+    margin-left:-40px;
     .modal-inner{
         background-color: transparent;
         width: 80px;
@@ -187,16 +199,29 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
 
 .modal-top{
     top: 0;
-    bottom: auto!important;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    .modal-title{
+        text-align: left;
+    }
     .modal-inner{
-        background-color:rgba(0, 0, 0, 0.85);
+        background-color:rgba(0, 0, 0, 0.8);
+        color: #d2d2d2;
+        font-size:14px;
+    }
+    .icon-close{
+        position: absolute;
+        right:$gapV;
         color: #fff;
+        z-index: 1;
     }
 }
 .modal-bottom{
-    top: auto!important;
     bottom:0;
+    top: auto;
     max-height: 200px;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     .modal-inner{
         padding: 0;
     }
@@ -204,9 +229,9 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
         margin-bottom: 0;
     }
     .modal-title{
-        height: 30px;
         line-height: 35px;
         font-size: 16px;
+        border-bottom:1px solid #ddd;
         .btn-link{
             font-size: 15px;
             padding:10px;
@@ -220,13 +245,67 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
     }
     .modal-title + .modal-text{
         height: 165px;
+        margin-top: 0;
     }
 }
-
-.modal-popover{
-    width: 150px;
+.modal-popup{
+    height:100%;
+    max-height: 100%;
+    background-color: #efeff4;
+    .modal-title+.modal-text{
+        height:auto;
+    }
 }
-
+.modal-popover{
+    max-width: 250px;
+    width:auto;
+    margin:0;
+    overflow: visible;
+    .modal-text > *{
+        margin: 0;
+    }
+    .modal-inner{
+        border-radius:8px;
+        padding: 0;
+    }
+    &.tri-top:before{
+        border-bottom: $triSize/2 solid $chrome-color;
+        top: -$triSize/2;
+    }
+    &.tri-bottom:after{
+        border-top: $triSize/2 solid $chrome-color;
+        bottom: -$triSize/2;
+    }
+    &.tri-left:before,&.tri-left:after{
+        left: 25%;
+    }
+    &.tri-right:before, &.tri-right:after{
+        left: 75%;
+    }
+    .modal-title+.modal-text{
+        margin-top: 0;
+    }
+}
+.modal-tips{
+    max-width: 150px;
+    .modal-text{
+        padding: 5px;
+        color: #fff;
+        font-size:13px;
+    }
+    .modal-inner{
+        background-color: #666;
+        border-radius:4px;
+    }
+    &.tri-top:before{
+        top: -7px;
+        border-bottom-color: #666;
+    }
+    &.tri-bottom:after{
+        bottom: -7px;
+        border-top-color: #666;
+    }
+}
 //loading
 .spinner {
     width: 60px;
@@ -247,7 +326,6 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
     position: absolute;
     top: 0;
     left: 0;
-
     -webkit-animation: bounce 2.0s infinite ease-in-out;
     animation: bounce 2.0s infinite ease-in-out;
 }
@@ -277,44 +355,37 @@ $actionsPopoverHairline: rgba(0,0,0,0.2);
     }
 }
 
-#modal{
-    width: 100%;
-    height: 100%;}
-
 //TOAST
-#toast{
-    display: none;
-    //@include absCenter(250px, auto, fixed);
-    position: fixed;
-    bottom:20%;
-    width: 100%;
+.modal-toast{
+    position: absolute;
+    bottom:25%;
+    width:100%;
     text-align: center;
-    .modal-toast{
+    margin: 0 auto;
+    color: #fff;
+    pointer-events: none;
+    .icon{
+        -webkit-font-smoothing: antialiased;
+        font-size: 15px;
         padding: 5px 10px;
-        text-align: center;
-        display: inline-block;
-        margin: 0 auto;
-        color: #fff;
-        .icon{
-            font-size: 15px;
-            &:before{
-                font-size: 18px;
-                position: relative;
-                top:1px;
-                margin-right: 5px;
-                //background-color: #fff;
-                //border-radius: 100%;
-            }
+        max-width:80%;
+        pointer-events: fill;
+        &:before{
+            font-size: 18px;
+            position: relative;
+            top:1px;
+            margin-right: 5px;
+            //background-color: #fff;
+            //border-radius: 100%;
         }
     }
-    .modal-toast-info{
+    &.modal-toast-info .icon{
         background-color: #333;
     }
-    .modal-toast-success{
+    &.modal-toast-success .icon{
         background-color: forestgreen;
     }
-    .modal-toast-error{
+    &.modal-toast-error .icon{
         background-color: orangered;
     }
-
 }

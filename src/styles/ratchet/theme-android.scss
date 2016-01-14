@@ -629,7 +629,7 @@ textarea,
 // Popovers
 // --------------------------------------------------
 
-.popover {
+.modal-popover {
   top: 47px;
   left: 15px;
   width: 200px;
@@ -656,7 +656,7 @@ textarea,
 }
 
 // Popovers with bars
-.popover {
+.modal-popover {
   .bar {
     border-radius: 0;
   }
@@ -668,7 +668,7 @@ textarea,
 }
 
 // Popovers with table-views
-.popover .table-view {
+.modal-popover .table-view {
   border-radius: 12px;
 }
 

@@ -832,7 +832,7 @@ code {
   }
 }
 @media screen and (min-width: 768px) {
-  .popover {
+  .modal-popover {
     position: absolute;
     display: block;
     top: 72px;
@@ -1033,7 +1033,7 @@ hr {
     .content {
       top: 50px;
     }
-    .popover {
+    .modal-popover {
       @include transform(scale(1));
     }
   }

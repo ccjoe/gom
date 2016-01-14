@@ -1,4 +1,6 @@
 $appColor:#129BD8;
+$gapV: 10px;
+$gapH: 15px;
 @mixin absCenter($width, $height, $pos: absolute){
     position: $pos;
     left: 50%; top:50%;

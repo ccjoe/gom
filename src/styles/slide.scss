@@ -1,4 +1,8 @@
 /* === Scroll === */
+.gom-scroll{
+    background-color: #fff;
+    padding: 10px;
+}
 .ui-scroll{
     overflow: hidden;
     > div{
@@ -9,8 +13,10 @@
         position: absolute;
         width: 100%;
         text-align: center;
-        background-color: #aaa;
-        display: none;
+        background-color: #eee;
+        font-size: 13px;
+        height: 44px;
+        line-height: 44px;
     }
     .ui-scroll-front{
         top:0;
@@ -199,6 +205,7 @@
 .slide-container-horizontal {
     .switch-item{
         float: left;
+        height:100%;
     }
     > .slide-pagination {
         bottom: 10px;
